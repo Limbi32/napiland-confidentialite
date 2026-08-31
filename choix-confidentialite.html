@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vos choix de confidentialité — Napiland</title>
+<meta name="description" content="Gérez vos données personnelles sur Napiland : accès, correction, export et suppression de votre compte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#211826;
+    --ink-soft:#5b4f5e;
+    --paper:#f7f2ef;
+    --card:#fffdfc;
+    --line:#e6ddd9;
+    --accent:#8c4a5f;
+    --accent-soft:#f0e2e6;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);background:var(--paper);line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px}
+
+  header{padding:64px 0 32px}
+  .brand{
+    display:inline-flex;align-items:baseline;gap:10px;
+    font-family:'Spectral',serif;font-weight:600;font-size:1.55rem;letter-spacing:-.01em;
+  }
+  .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);display:inline-block}
+  .eyebrow{
+    font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);margin:36px 0 12px;
+  }
+  h1{
+    font-family:'Spectral',serif;font-weight:600;font-size:2.5rem;line-height:1.12;
+    letter-spacing:-.02em;margin-bottom:16px;
+  }
+  .lede{font-size:1.08rem;color:var(--ink-soft);max-width:54ch}
+
+  section{padding:8px 0}
+  h2{
+    font-family:'Spectral',serif;font-weight:600;font-size:1.5rem;
+    margin:44px 0 14px;letter-spacing:-.01em;
+  }
+  p{color:var(--ink-soft);margin-bottom:14px}
+  a{color:var(--accent);text-underline-offset:2px}
+
+  .rights{list-style:none;display:grid;gap:2px}
+  .rights li{
+    padding:16px 0;border-bottom:1px solid var(--line);
+    display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline;
+  }
+  .rights .k{
+    font-family:'Spectral',serif;font-weight:600;color:var(--ink);font-size:1.05rem;white-space:nowrap;
+  }
+  .rights .v{color:var(--ink-soft)}
+
+  .action{
+    margin:24px 0;padding:26px 28px;background:var(--card);
+    border:1px solid var(--line);border-radius:var(--radius);
+  }
+  .action .label{font-size:.82rem;color:var(--ink-soft);margin-bottom:6px}
+  .action strong{color:var(--ink)}
+  .btn{
+    display:inline-block;margin-top:16px;background:var(--ink);color:#fff;text-decoration:none;
+    font-weight:600;font-size:.95rem;padding:13px 24px;border-radius:999px;
+    transition:transform .15s ease,background .18s ease;
+  }
+  .btn:hover{background:var(--accent);transform:translateY(-1px)}
+
+  footer{
+    margin-top:56px;padding:36px 0 64px;border-top:1px solid var(--line);
+    font-size:.9rem;color:var(--ink-soft);
+  }
+  footer a{color:var(--accent);text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  footer .row{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:10px}
+
+  a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+  @media (max-width:560px){
+    header{padding:44px 0 24px}
+    h1{font-size:2rem}
+    .rights li{grid-template-columns:1fr;gap:4px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand"><span class="dot"></span>Napiland</div>
+    <p class="eyebrow">Confidentialité</p>
+    <h1>Vos données, vos choix</h1>
+    <p class="lede">Vous gardez le contrôle des informations que vous partagez avec Napiland. Voici vos droits et comment les exercer, y compris la suppression de votre compte.</p>
+  </header>
+
+  <section>
+    <h2>Vos droits</h2>
+    <ul class="rights">
+      <li><span class="k">Accès</span><span class="v">Demander une copie des données que nous détenons sur vous.</span></li>
+      <li><span class="k">Rectification</span><span class="v">Corriger toute information inexacte de votre compte.</span></li>
+      <li><span class="k">Suppression</span><span class="v">Supprimer votre compte et l'ensemble des données associées.</span></li>
+      <li><span class="k">Opposition</span><span class="v">Retirer votre consentement au traitement à tout moment.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Gérer ou supprimer votre compte</h2>
+    <p>Pour exercer l'un de ces droits, une seule adresse suffit. Précisez votre demande et l'e-mail associé à votre compte Napiland.</p>
+    <div class="action">
+      <div class="label">Écrivez-nous — demande traitée sous 30&nbsp;jours</div>
+      <strong>Assitandiaye@outlook.fr</strong>
+      <br>
+      <a class="btn" href="mailto:Assitandiaye@outlook.fr?subject=Suppression%20de%20compte%20Napiland">Demander la suppression</a>
+    </div>
+    <p>Pour une suppression, indiquez «&nbsp;Suppression de compte&nbsp;» en objet. Nous confirmons la prise en compte et effaçons vos données dans les délais légaux.</p>
+  </section>
+
+  <section>
+    <h2>Quelles données&nbsp;?</h2>
+    <p>Napiland collecte uniquement ce qui est nécessaire au service : votre compte (nom, e-mail, téléphone), les photos que vous soumettez pour l'analyse capillaire, et vos informations d'abonnement. Le détail complet figure dans notre <a href="https://limbi32.github.io/privacyall/" target="_blank" rel="noopener">politique de confidentialité</a>.</p>
+  </section>
+
+  <footer>
+    <div>© 2026 Napiland — François Digital Works</div>
+    <div class="row">
+      <a href="mailto:Assitandiaye@outlook.fr">Contact</a>
+      <a href="https://limbi32.github.io/privacyall/" target="_blank" rel="noopener">Politique de confidentialité</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
